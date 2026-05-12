@@ -165,9 +165,33 @@ To support our automated deployment, distinct EC2 environments were provisioned 
     \caption{AWS IAM role showing the AmazonEC2ContainerRegistryReadOnly policy attached to the EC2 instances.}
 \end{figure}
 
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.75\textwidth]{"sc/IAM role"}
+    \caption{AWS IAM role details highlighting ECR permissions.}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.75\textwidth]{"sc/IAM User created"}
+    \caption{Dedicated AWS IAM User created for GitHub Actions deployment capabilities.}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.75\textwidth]{"sc/security group details"}
+    \caption{EC2 Security Group configurations allowing required inbound traffic.}
+\end{figure}
+
 \subsection*{Task 3: GitHub Actions CI/CD Workflows}
 
 The complete pipeline requires extensive identity integration. After securing our GitHub repository with AWS credentials, we validated both the Testing workflow triggered by a PR and the Staging Workflow upon merging.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.75\textwidth]{"sc/testing.yml in vscode"}
+    \caption{VS Code environment showing the customized testing.yml GitHub Actions workflow.}
+\end{figure}
 
 \begin{figure}[H]
     \centering
@@ -205,14 +229,32 @@ The complete pipeline requires extensive identity integration. After securing ou
 
 \begin{figure}[H]
     \centering
+    \includegraphics[width=0.75\textwidth]{"sc/pull requestest successfull merge"}
+    \caption{Pull request successfully approved and merged into the main branch.}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
     \includegraphics[width=0.75\textwidth]{"sc/staging workflow success on github"}
     \caption{GitHub Actions tab showing the Staging workflow passing after merging the PR.}
 \end{figure}
 
 \begin{figure}[H]
     \centering
+    \includegraphics[width=0.75\textwidth]{"sc/docker compose on staging"}
+    \caption{Staging EC2 terminal showing docker compose successfully pulling and deploying images.}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
     \includegraphics[width=0.75\textwidth]{"sc/staging successful deployed email"}
     \caption{Automated Team success email showing the Staging server IP link.}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.75\textwidth]{"sc/live app on staging instance"}
+    \caption{Browser showing the application running live on the Staging EC2 instance.}
 \end{figure}
 
 \end{document}

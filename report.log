@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.12.18)  13 MAY 2026 01:48
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.12.18)  13 MAY 2026 01:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -768,116 +768,202 @@ File: sc/IAM role attached to dev enviormnet.png Graphic file (type png)
 Package pdftex.def Info: sc/IAM role attached to dev enviormnet.png  used on in
 put line 164.
 (pdftex.def)             Requested size: 352.31625pt x 139.6732pt.
-<sc/Secrets in repo.png, id=37, 489.027pt x 383.63326pt>
-File: sc/Secrets in repo.png Graphic file (type png)
-<use sc/Secrets in repo.png>
-Package pdftex.def Info: sc/Secrets in repo.png  used on input line 174.
-(pdftex.def)             Requested size: 352.31625pt x 276.39719pt.
+<sc/IAM role.png, id=37, 687.7695pt x 347.49825pt>
+File: sc/IAM role.png Graphic file (type png)
+<use sc/IAM role.png>
+Package pdftex.def Info: sc/IAM role.png  used on input line 170.
+(pdftex.def)             Requested size: 352.31625pt x 178.0118pt.
  [5
 pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.176 \end{figure}
-                  
+l.173 
+      
 pdfTeX warning (ext4): destination with the same identifier (name{figure.4}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.176 \end{figure}
-                  
+l.173 
+      
 pdfTeX warning (ext4): destination with the same identifier (name{figure.5}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.176 \end{figure}
-                   <./sc/Running Instances in AWS.png> <./sc/ECR created reposi
-tories.png> <./sc/IAM role attached to dev enviormnet.png>]
-<sc/ssh established.png, id=48, 452.892pt x 392.667pt>
-File: sc/ssh established.png Graphic file (type png)
-<use sc/ssh established.png>
-Package pdftex.def Info: sc/ssh established.png  used on input line 180.
-(pdftex.def)             Requested size: 352.31625pt x 305.47615pt.
+l.173 
+       <./sc/Running Instances in AWS.png> <./sc/ECR created repositories.png> 
+<./sc/IAM role attached to dev enviormnet.png>]
+<sc/IAM User created.png, id=48, 693.792pt x 334.24875pt>
+File: sc/IAM User created.png Graphic file (type png)
+<use sc/IAM User created.png>
+Package pdftex.def Info: sc/IAM User created.png  used on input line 176.
+(pdftex.def)             Requested size: 352.31625pt x 169.73526pt.
+<sc/security group details.png, id=49, 726.3135pt x 314.3745pt>
+File: sc/security group details.png Graphic file (type png)
+<use sc/security group details.png>
+Package pdftex.def Info: sc/security group details.png  used on input line 182.
+
+(pdftex.def)             Requested size: 352.31625pt x 152.50021pt.
  [6
 pdfTeX warning (ext4): destination with the same identifier (name{figure.6}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.183 
-       <./sc/Secrets in repo.png>]
-<sc/testing workflow success run on github.png, id=55, 657.05475pt x 368.577pt>
-
-File: sc/testing workflow success run on github.png Graphic file (type png)
-<use sc/testing workflow success run on github.png>
-Package pdftex.def Info: sc/testing workflow success run on github.png  used on
- input line 188.
-(pdftex.def)             Requested size: 352.31625pt x 197.63947pt.
-<sc/testing successful email .png, id=56, 428.802pt x 172.2435pt>
-File: sc/testing successful email .png Graphic file (type png)
-<use sc/testing successful email .png>
-Package pdftex.def Info: sc/testing successful email .png  used on input line 1
-94.
-(pdftex.def)             Requested size: 352.31625pt x 141.52441pt.
- [7
+l.189 
+      
 pdfTeX warning (ext4): destination with the same identifier (name{figure.7}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.197 
+l.189 
       
 pdfTeX warning (ext4): destination with the same identifier (name{figure.8}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.197 
-       <./sc/ssh established.png> <./sc/testing workflow success run on github.
-png>]
-<sc/live app on testing instance link.png, id=66, 609.477pt x 313.17pt>
-File: sc/live app on testing instance link.png Graphic file (type png)
-<use sc/live app on testing instance link.png>
-Package pdftex.def Info: sc/live app on testing instance link.png  used on inpu
-t line 200.
-(pdftex.def)             Requested size: 352.31625pt x 181.03183pt.
-<sc/staging workflow success on github.png, id=67, 578.76225pt x 398.08725pt>
-File: sc/staging workflow success on github.png Graphic file (type png)
-<use sc/staging workflow success on github.png>
-Package pdftex.def Info: sc/staging workflow success on github.png  used on inp
-ut line 208.
-(pdftex.def)             Requested size: 352.31625pt x 242.33476pt.
- [8
+l.189 
+       <./sc/IAM role.png> <./sc/IAM User created.png> <./sc/security group det
+ails.png>]
+<sc/testing.yml in vscode.png, id=60, 564.30824pt x 362.5545pt>
+File: sc/testing.yml in vscode.png Graphic file (type png)
+<use sc/testing.yml in vscode.png>
+Package pdftex.def Info: sc/testing.yml in vscode.png  used on input line 192.
+(pdftex.def)             Requested size: 352.31625pt x 226.36365pt.
+<sc/Secrets in repo.png, id=61, 489.027pt x 383.63326pt>
+File: sc/Secrets in repo.png Graphic file (type png)
+<use sc/Secrets in repo.png>
+Package pdftex.def Info: sc/Secrets in repo.png  used on input line 198.
+(pdftex.def)             Requested size: 352.31625pt x 276.39719pt.
+ [7
 pdfTeX warning (ext4): destination with the same identifier (name{figure.9}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.211 
-      
+l.201 
+       <./sc/testing.yml in vscode.png>]
+<sc/ssh established.png, id=69, 452.892pt x 392.667pt>
+File: sc/ssh established.png Graphic file (type png)
+<use sc/ssh established.png>
+Package pdftex.def Info: sc/ssh established.png  used on input line 204.
+(pdftex.def)             Requested size: 352.31625pt x 305.47615pt.
+ [8
 pdfTeX warning (ext4): destination with the same identifier (name{figure.10}) h
 as been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.211 
-       <./sc/testing successful email .png> <./sc/live app on testing instance 
-link.png>]
-<sc/staging successful deployed email.png, id=76, 377.61075pt x 169.8345pt>
-File: sc/staging successful deployed email.png Graphic file (type png)
-<use sc/staging successful deployed email.png>
-Package pdftex.def Info: sc/staging successful deployed email.png  used on inpu
-t line 214.
-(pdftex.def)             Requested size: 352.31625pt x 158.46274pt.
+l.207 
+       <./sc/Secrets in repo.png>]
+<sc/testing workflow success run on github.png, id=76, 657.05475pt x 368.577pt>
+
+File: sc/testing workflow success run on github.png Graphic file (type png)
+<use sc/testing workflow success run on github.png>
+Package pdftex.def Info: sc/testing workflow success run on github.png  used on
+ input line 212.
+(pdftex.def)             Requested size: 352.31625pt x 197.63947pt.
+<sc/testing successful email .png, id=77, 428.802pt x 172.2435pt>
+File: sc/testing successful email .png Graphic file (type png)
+<use sc/testing successful email .png>
+Package pdftex.def Info: sc/testing successful email .png  used on input line 2
+18.
+(pdftex.def)             Requested size: 352.31625pt x 141.52441pt.
  [9
 pdfTeX warning (ext4): destination with the same identifier (name{figure.11}) h
 as been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.218 \end{document}
-                    
+l.221 
+      
 pdfTeX warning (ext4): destination with the same identifier (name{figure.12}) h
 as been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.218 \end{document}
-                     <./sc/staging workflow success on github.png> <./sc/stagin
-g successful deployed email.png>] (report.aux)
+l.221 
+       <./sc/ssh established.png> <./sc/testing workflow success run on github.
+png>]
+<sc/live app on testing instance link.png, id=86, 609.477pt x 313.17pt>
+File: sc/live app on testing instance link.png Graphic file (type png)
+<use sc/live app on testing instance link.png>
+Package pdftex.def Info: sc/live app on testing instance link.png  used on inpu
+t line 224.
+(pdftex.def)             Requested size: 352.31625pt x 181.03183pt.
+<sc/pull requestest successfull merge.png, id=87, 600.44325pt x 254.1495pt>
+File: sc/pull requestest successfull merge.png Graphic file (type png)
+<use sc/pull requestest successfull merge.png>
+Package pdftex.def Info: sc/pull requestest successfull merge.png  used on inpu
+t line 232.
+(pdftex.def)             Requested size: 352.31625pt x 149.12477pt.
+<sc/staging workflow success on github.png, id=88, 578.76225pt x 398.08725pt>
+File: sc/staging workflow success on github.png Graphic file (type png)
+<use sc/staging workflow success on github.png>
+Package pdftex.def Info: sc/staging workflow success on github.png  used on inp
+ut line 238.
+(pdftex.def)             Requested size: 352.31625pt x 242.33476pt.
+ [10
+pdfTeX warning (ext4): destination with the same identifier (name{figure.13}) h
+as been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.241 
+      
+pdfTeX warning (ext4): destination with the same identifier (name{figure.14}) h
+as been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.241 
+      
+pdfTeX warning (ext4): destination with the same identifier (name{figure.15}) h
+as been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.241 
+       <./sc/testing successful email .png> <./sc/live app on testing instance 
+link.png> <./sc/pull requestest successfull merge.png>]
+<sc/docker compose on staging.png, id=99, 486.01575pt x 380.01974pt>
+File: sc/docker compose on staging.png Graphic file (type png)
+<use sc/docker compose on staging.png>
+Package pdftex.def Info: sc/docker compose on staging.png  used on input line 2
+44.
+(pdftex.def)             Requested size: 352.31625pt x 275.48695pt.
+<sc/staging successful deployed email.png, id=100, 377.61075pt x 169.8345pt>
+File: sc/staging successful deployed email.png Graphic file (type png)
+<use sc/staging successful deployed email.png>
+Package pdftex.def Info: sc/staging successful deployed email.png  used on inpu
+t line 250.
+(pdftex.def)             Requested size: 352.31625pt x 158.46274pt.
+ [11
+pdfTeX warning (ext4): destination with the same identifier (name{figure.16}) h
+as been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.253 
+      
+pdfTeX warning (ext4): destination with the same identifier (name{figure.17}) h
+as been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.253 
+       <./sc/staging workflow success on github.png> <./sc/docker compose on st
+aging.png>]
+<sc/live app on staging instance.png, id=109, 530.58224pt x 287.27325pt>
+File: sc/live app on staging instance.png Graphic file (type png)
+<use sc/live app on staging instance.png>
+Package pdftex.def Info: sc/live app on staging instance.png  used on input lin
+e 256.
+(pdftex.def)             Requested size: 352.31625pt x 190.75815pt.
+ [12
+pdfTeX warning (ext4): destination with the same identifier (name{figure.18}) h
+as been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.260 \end{document}
+                    
+pdfTeX warning (ext4): destination with the same identifier (name{figure.19}) h
+as been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.260 \end{document}
+                     <./sc/staging successful deployed email.png> <./sc/live ap
+p on staging instance.png>] (report.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
@@ -886,10 +972,10 @@ Package rerunfilecheck Info: File `report.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 21363 strings out of 474486
- 412261 string characters out of 5744226
+ 21457 strings out of 474486
+ 415287 string characters out of 5744226
  1939542 words of memory out of 5000000
- 43298 multiletter control sequences out of 15000+600000
+ 43382 multiletter control sequences out of 15000+600000
  563434 words of font info for 54 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,10n,93p,513b,858s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -900,9 +986,9 @@ amsfonts/cm/cmr12.pfb><C:/Users/Zain/AppData/Local/Programs/MiKTeX/fonts/type1/
 public/amsfonts/cm/cmr8.pfb><C:/Users/Zain/AppData/Local/Programs/MiKTeX/fonts/
 type1/public/amsfonts/cm/cmss10.pfb><C:/Users/Zain/AppData/Local/Programs/MiKTe
 X/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on report.pdf (9 pages, 699288 bytes).
+Output written on report.pdf (12 pages, 1287391 bytes).
 PDF statistics:
- 117 PDF objects out of 1000 (max. 8388607)
- 22 named destinations out of 1000 (max. 500000)
- 68 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 152 PDF objects out of 1000 (max. 8388607)
+ 32 named destinations out of 1000 (max. 500000)
+ 103 words of extra memory for PDF output out of 10000 (max. 10000000)
 
