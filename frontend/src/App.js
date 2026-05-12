@@ -46,7 +46,7 @@ function App() {
 
   return (
     <div className="container">
-      <h1>Task Manager</h1>
+      <h1>Task Manager (UI Update)</h1>
 
       <div className="form">
         <input
