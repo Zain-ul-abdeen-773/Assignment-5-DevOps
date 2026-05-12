@@ -1,0 +1,112 @@
+name: Testing Environment CI/CD
+
+on:
+  pull_request:
+    branches: [ "main" ]
+  workflow_dispatch: # Allows manual triggering via GitHub UI
+
+jobs:
+  build-test-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      # --- CI: TEST & LINT ---
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20' # Adjust if your app uses a different version
+
+      - name: Install Backend Dependencies & Test
+        working-directory: ./backend
+        run: |
+          npm install
+          npm run test
+          # npm run lint (Uncomment if you have an ESLint script configured)
+
+      - name: Install Frontend Dependencies
+        working-directory: ./frontend
+        run: |
+          npm install
+          # npm run test (Uncomment if you have frontend tests)
+
+      # --- AWS ECR PUSH ---
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: ${{ secrets.AWS_REGION }}
+
+      - name: Login to Amazon ECR
+        id: login-ecr
+        uses: aws-actions/amazon-ecr-login@v2
+
+      - name: Build, tag, and push Backend Image
+        env:
+          ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
+          ECR_REPOSITORY: taskmanager-backend
+          IMAGE_TAG: latest
+        working-directory: ./backend
+        run: |
+          docker build -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG .
+          docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
+
+      - name: Build, tag, and push Frontend Image
+        env:
+          ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
+          ECR_REPOSITORY: taskmanager-frontend
+          IMAGE_TAG: latest
+        working-directory: ./frontend
+        run: |
+          docker build -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG .
+          docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
+
+      # --- DEPLOY TO EC2 ---
+      - name: Deploy to Testing Server
+        uses: appleboy/ssh-action@v1.0.0
+        with:
+          host: ${{ secrets.TESTING_HOST }}
+          username: ${{ secrets.EC2_USER }}
+          key: ${{ secrets.EC2_SSH_KEY }}
+          script: |
+            cd taskmanager
+            # Authenticate EC2 docker daemon with ECR (using the IAM role attached earlier)
+            aws ecr get-login-password --region ${{ secrets.AWS_REGION }} | docker login --username AWS --password-stdin ${{ steps.login-ecr.outputs.registry }}
+            docker-compose pull
+            docker-compose up -d
+
+      # --- NOTIFICATIONS ---
+      - name: Send Success Email to QA
+        if: success()
+        uses: dawidd6/action-send-mail@v3
+        with:
+          server_address: smtp.gmail.com
+          server_port: 465
+          username: ${{ secrets.EMAIL_USERNAME }}
+          password: ${{ secrets.EMAIL_PASSWORD }}
+          subject: "QA Ready: Task Manager Deployment Successful"
+          to: ${{ secrets.INSTRUCTOR_EMAIL }}
+          from: GitHub Actions DevOps
+          body: |
+            The latest Pull Request has passed all tests and has been successfully deployed to the Testing Environment.
+            
+            QA can access and test the application here:
+            http://${{ secrets.TESTING_HOST }}:3000
+
+      - name: Send Failure Email
+        if: failure()
+        uses: dawidd6/action-send-mail@v3
+        with:
+          server_address: smtp.gmail.com
+          server_port: 465
+          username: ${{ secrets.EMAIL_USERNAME }}
+          password: ${{ secrets.EMAIL_PASSWORD }}
+          subject: "ACTION REQUIRED: Testing Pipeline Failed"
+          to: ${{ secrets.INSTRUCTOR_EMAIL }},${{ github.event.pull_request.user.login }}@users.noreply.github.com
+          from: GitHub Actions DevOps
+          body: |
+            The CI/CD pipeline for the Testing Environment has failed. 
+            Please check the GitHub Actions logs for the exact error during the build, test, or deployment phase.
