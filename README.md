@@ -63,12 +63,12 @@ The software delivery lifecycle is fully automated across multiple environments 
 
 *(Screenshots of the deployment process are located in the `sc/` directory)*
 
-* **Github Repo Setup:** ![Local Setup](sc\git repo.png)
-* **AWS EC2 Dashboard:** ![EC2 Instances](sc\Running Instances in AWS.png)
-* **AWS ECR Repositories:** ![ECR Repositories](sc\ECR created repositories.png)
-* **Testing Workflow Execution:** ![Testing CI/CD](sc\testing workflow success run on github.png)
-* **Staging Workflow Execution:** ![Staging CI/CD](sc\staging workflow success on github.png)
-* **Live Staging Application:** ![Live App](sc\live app on staging instance.png)
+* **Github Repo Setup:** ![Local Setup](<sc/1. vs code project tree.png>)
+* **AWS EC2 Dashboard:** ![EC2 Instances](<sc/Running Instances in AWS.png>)
+* **AWS ECR Repositories:** ![ECR Repositories](<sc/ECR created repositories.png>)
+* **Testing Workflow Execution:** ![Testing CI/CD](<sc/testing workflow success run on github.png>)
+* **Staging Workflow Execution:** ![Staging CI/CD](<sc/staging workflow success on github.png>)
+* **Live Staging Application:** ![Live App](<sc/live app on staging instance.png>)
 
 ---
 
