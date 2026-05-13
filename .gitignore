@@ -1,0 +1,115 @@
+# Node.js & npm
+node_modules/
+npm-debug.log
+npm-debug.log.*
+yarn-debug.log
+yarn-error.log
+package-lock.json
+yarn.lock
+.npm
+.eslintcache
+
+# Environment Variables
+.env
+.env.local
+.env.*.local
+.env.development
+.env.production
+.env.test
+
+# IDE & Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+.sublime-project
+.sublime-workspace
+*.iml
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+.history
+.ionide
+
+# Build Output & Dist
+dist/
+build/
+coverage/
+.next/
+out/
+.nuxt
+.cache/
+.vuepress/dist
+.serverless/
+.fusebox/
+.dynamodb/
+.tern-port
+
+# React & Frontend
+frontend/build/
+frontend/node_modules/
+frontend/.eslintcache
+frontend/.jest-cache
+frontend/coverage/
+
+# Backend
+backend/build/
+backend/node_modules/
+backend/coverage/
+backend/dist/
+
+# Docker
+.dockerignore
+docker-compose.override.yml
+
+# OS
+Thumbs.db
+.DS_Store
+*.log
+
+# Temporary Files
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+*~
+.~*
+
+# Test Coverage
+coverage/
+.nyc_output/
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+mongo/
+
+# AWS & Cloud
+.aws/
+aws-sdk-config.js
+.terraform/
+.terraform.lock.hcl
+
+# Local Environment
+.venv/
+venv/
+ENV/
+env/
+
+# CI/CD (keep workflows, but ignore logs)
+.github/workflows/logs/
+.gitlab-ci.lock
+
+# Project Specific
+.history/
+local_uploads/
+uploads/
+temp/
+tmp/
